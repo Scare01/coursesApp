@@ -1,3 +1,8 @@
 <div class="app-button">
-  {{name}}
+  <ng-container *ngIf="text">
+    {{text}}
+  </ng-container>
+  <ng-container *ngIf="iconName">
+    <fa-icon [icon]="iconName"></fa-icon>
+  </ng-container>
 </div>
