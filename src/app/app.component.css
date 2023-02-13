@@ -1,0 +1,12 @@
+.add-new-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.add-new-course-btn {
+  width: 233px;
+  height: 50px;
+}

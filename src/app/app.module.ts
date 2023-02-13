@@ -8,6 +8,9 @@ import { LoginComponent } from './features/login/login.component';
 import { RegistrationComponent } from './features/registration/registration.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderModule } from './shared/components/header/header.module';
+import { InfoModule } from './shared/components/info/info.module';
+import { ButtonModule } from './shared/components/button/button.module';
+import { CourseCardModule } from './shared/components/course-card/course-card.module';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { HeaderModule } from './shared/components/header/header.module';
     LoginComponent,
     RegistrationComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FontAwesomeModule,
-        HeaderModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    HeaderModule,
+    InfoModule,
+    ButtonModule,
+    CourseCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
