@@ -1,4 +1,12 @@
 <div class="app-header">
   <img alt="logo" src="assets/logo.svg">
-  <!-- Enter your code here -->
+  <ng-container *ngIf="isLogin">
+    <div class="login-container">
+      <p class="user-name">{{userName}}</p>
+      <app-button [name]="loginText"></app-button>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!isLogin">
+    <app-button [name]="logoutText"></app-button>
+  </ng-container>
 </div>
