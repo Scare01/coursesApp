@@ -31,4 +31,17 @@
       margin-top: 16px;
     }
   }
+
+  &__info-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__info-btn {
+    widht: 180px;
+    height: 50px;
+  }
 }
+
+
