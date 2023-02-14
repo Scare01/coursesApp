@@ -11,13 +11,15 @@ import { HeaderModule } from './shared/components/header/header.module';
 import { InfoModule } from './shared/components/info/info.module';
 import { ButtonModule } from './shared/components/button/button.module';
 import { CourseCardModule } from './shared/components/course-card/course-card.module';
+import { CourseListComponent } from './shared/components/course-list/course-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
