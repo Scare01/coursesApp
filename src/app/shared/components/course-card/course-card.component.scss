@@ -7,7 +7,7 @@
   border-left: 8px solid $color-dark-gray;
   display: flex;
   justify-content: space-between;
-  margin: 32px 0;
+  margin: 32px auto;
   min-height: 170px;
   width: 80vw;
   background-color: $color-white;
@@ -31,4 +31,17 @@
       margin-top: 16px;
     }
   }
+
+  &__info-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__info-btn {
+    widht: 180px;
+    height: 50px;
+  }
 }
+
+
