@@ -3,10 +3,10 @@
   <ng-container *ngIf="isLogin">
     <div class="login-container">
       <p class="user-name">{{userName}}</p>
-      <app-button [text]="loginText"></app-button>
+      <app-button [text]="logoutText"></app-button>
     </div>
   </ng-container>
   <ng-container *ngIf="!isLogin">
-    <app-button [text]="logoutText"></app-button>
+    <app-button [text]="loginText"></app-button>
   </ng-container>
 </div>

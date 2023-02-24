@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   constructor() {}
 
-  isLogin = true;
+  isLogin = false;
   userName = "Ivan";
   loginText = "Login";
   logoutText = "Logout";
+
+
 }
