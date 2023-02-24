@@ -1,10 +1,11 @@
 $color-white: #fff;
 $color-gray: #CFCFCF;
 $color-red: #FF0000;
+$color-gray-dark: #333E48;
 
 .app-plate {
     width: 100%;
-    min-height: 477px;
+    //min-height: 477px;
     background-color: $color-white;
     border: 1px solid $color-gray;
     border-radius: 4px;
@@ -25,7 +26,35 @@ $color-red: #FF0000;
 
 .form {
     &__control {
-        margin-bottom: 24px;
+      min-width: 330px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+
+      &__label {
+        width: 45px;
+        height: 20px;
+        left: 577px;
+        top: 433px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-gray-dark;
+      }
+
+      &__inputField {
+        box-sizing: border-box;
+        height: 50px;
+        left: 577px;
+        top: 453px;
+        background: $color-white;
+        border: 1px solid #CFCFCF;
+        border-radius: 4px;
+        padding: 13px 16px;
+      }
     }
 
     &__action {

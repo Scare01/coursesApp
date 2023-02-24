@@ -11,6 +11,8 @@ export class AppComponent {
   infoText = "Please use 'Add New Course' button to add your first course";
   addNewCourse = "ADD NEW COURSE";
 
+  isLogin = false;
+
   courses = [
     {
       id: "de5aaa59-90f5-4dbc-b8a9-aaf205c551ba",
