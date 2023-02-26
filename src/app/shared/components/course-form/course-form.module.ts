@@ -4,6 +4,7 @@ import { CourseFormComponent } from './course-form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from '../button/button.module';
+import { PipesModule } from '../../pipes/pipes.module';
 
 @NgModule({
   declarations: [CourseFormComponent],
@@ -13,6 +14,7 @@ import { ButtonModule } from '../button/button.module';
         FormsModule,
         ReactiveFormsModule,
         ButtonModule,
+        PipesModule,
     ],
   exports: [CourseFormComponent],
 })
