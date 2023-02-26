@@ -32,7 +32,7 @@ $color-gray-dark: #333E48;
       flex-direction: column;
 
       &__label {
-        width: 45px;
+        min-width: 45px;
         height: 20px;
         left: 577px;
         top: 433px;
@@ -48,8 +48,6 @@ $color-gray-dark: #333E48;
       &__inputField {
         box-sizing: border-box;
         height: 50px;
-        left: 577px;
-        top: 453px;
         background: $color-white;
         border: 1px solid #CFCFCF;
         border-radius: 4px;

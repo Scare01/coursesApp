@@ -1,13 +1,14 @@
 <app-header></app-header>
-<!--<ng-container *ngIf="courses.length == 0">-->
-<!--  <div class="add-new-course">-->
-<!--    <app-info [title]="infoTitle" [text]="infoText"></app-info>-->
-<!--    <app-button class="add-new-course-btn" [text]="addNewCourse"></app-button>-->
-<!--  </div>-->
-<!--</ng-container>-->
-<!--<ng-container *ngIf="courses.length > 0">-->
-<!--  <app-course-list [courses]="courses"></app-course-list>-->
-<!--</ng-container>-->
+<ng-container *ngIf="courses.length == 0">
+  <div class="add-new-course">
+    <app-info [title]="infoTitle" [text]="infoText"></app-info>
+    <app-button class="add-new-course-btn" [text]="addNewCourse"></app-button>
+  </div>
+</ng-container>
+<ng-container *ngIf="courses.length > 0">
+  <app-search></app-search>
+  <app-course-list [courses]="courses"></app-course-list>
+</ng-container>
 
 <div class="main-content">
   <div class="login-form-container">

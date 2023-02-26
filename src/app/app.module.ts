@@ -15,6 +15,7 @@ import { CourseListComponent } from './shared/components/course-list/course-list
 import { LoginFormModule } from './shared/components/login-form/login-form.module';
 import { RegistrationFormModule } from './shared/components/registration-form/registration-form.module';
 import { CourseFormModule } from './shared/components/course-form/course-form.module';
+import { SearchModule } from './shared/components/search/search.module';
 
 @NgModule({
   declarations: [
@@ -24,18 +25,19 @@ import { CourseFormModule } from './shared/components/course-form/course-form.mo
     RegistrationComponent,
     CourseListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    HeaderModule,
-    InfoModule,
-    ButtonModule,
-    CourseCardModule,
-    LoginFormModule,
-    RegistrationFormModule,
-    CourseFormModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FontAwesomeModule,
+        HeaderModule,
+        InfoModule,
+        ButtonModule,
+        CourseCardModule,
+        LoginFormModule,
+        RegistrationFormModule,
+        CourseFormModule,
+        SearchModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
