@@ -6,6 +6,24 @@
   </div>
 </ng-container>
 <ng-container *ngIf="courses.length > 0">
+  <app-search></app-search>
   <app-course-list [courses]="courses"></app-course-list>
 </ng-container>
 
+<div class="main-content">
+  <div class="login-form-container">
+    <app-login-form></app-login-form>
+  </div>
+</div>
+
+<div class="main-content">
+  <div class="registration-form-container">
+    <app-registration-form></app-registration-form>
+  </div>
+</div>
+
+<div class="main-content">
+  <div class="create-course-form-container">
+    <app-course-form></app-course-form>
+  </div>
+</div>

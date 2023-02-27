@@ -1,31 +1,34 @@
 <h2 class="text-align-center">Login</h2>
-<div class="app-plate">
-  <div class="login-form">
+<form class="login-form" [formGroup]="loginForm" (onSubmit)="onFormSubmit()">
+  <div class="app-plate">
     <div>
-      <div class="form__control">
-        <label for="email">Email</label>
-        <input
-          type="text"
-          id="email"
-          placeholder="Input text"
-        />
-      </div>
-      <div class="form__control">
-        <label for="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Input text"
-        />
-      </div>
-    </div>
-    <div>
-      <div class="form__action">
-        <app-button></app-button>
-      </div>
-      <div class="form__text">
-        If you don't have an account you may <strong>Registration</strong>
-      </div>
+        <div class="form__control">
+          <label for="email" class="form__control__label">Email</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Input text"
+            class="form__control__inputField"
+            formControlName="email"
+          />
+        </div>
+        <div class="form__control">
+          <label for="password" class="form__control__label">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Input text"
+            class="form__control__inputField"
+            formControlName="password"
+          />
+        </div>
+
+        <div class="form__action">
+          <app-button [text]="loginText"></app-button>
+        </div>
+        <div class="form__text">
+          If you don't have an account you may <strong>Registration</strong>
+        </div>
     </div>
   </div>
-</div>
+</form>

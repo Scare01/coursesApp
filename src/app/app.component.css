@@ -10,3 +10,22 @@
   width: 233px;
   height: 50px;
 }
+
+.login-form-container,
+.registration-form-container,
+.create-course-form-container {
+  margin: 0 auto;
+}
+
+.login-form-container {
+  max-width: 500px;
+}
+
+.registration-form-container {
+  width: 585px;
+}
+
+.create-course-form-container {
+  max-width: 1125px;
+}
+

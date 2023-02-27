@@ -1,5 +1,13 @@
 @import 'src/app/shared/styles/styles';
 
+.create-course-form {
+  width: 1125px;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .course {
  min-width: 60vw;
 
@@ -34,4 +42,13 @@
     margin-left: 4px;
     cursor: pointer;
   }
+}
+
+#description {
+  box-sizing: border-box;
+  height: 152px;
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  padding: 13px 16px;
 }
